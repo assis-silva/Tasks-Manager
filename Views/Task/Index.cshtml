@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+
+
+    @Model IEnumerable<Tasks_Manager.Models.Task>
+
+    @{
+        Layout = null;
+    }
+
+
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <title>Index</title>
+    </head>
+    <body>
+        <table>
+            @foreach (var task in Model)
+            {
+            <tr>
+                @*<td>@task.Id</td>*@
+                @*Fazer para todos os args do abnco*@
+                <td>@task</td>
+            </tr>
+            }
+        </table>
+    </body>
+</html>
